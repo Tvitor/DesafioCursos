@@ -1,0 +1,14 @@
+Objetivo
+   O Presente projeto tem por finalidade implementar uma listagem de conteúdo ( cursos) utilizando endpoint de uma API já implementada
+   e uma página de conteúdo de um curso.
+
+DesafioCefis|
+            ---css
+                  -style.css
+            ---js 
+                  -Filter.js
+                  -script.js
+            ---LICENSE
+            ---Readme
+            ---index.html
+                  
