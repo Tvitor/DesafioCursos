@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8"/>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Lista de Cursos</title>
+	</head>
+	<body class="index">
+		<div class="centro">
+		<h1>Arena Cursos</h1>
+		<form>
+			<div class="limpar">
+				<input type="button" value= "Limpar" onClick="history.go(0)">
+			</div>
+		</form>   
+		<div class="container" id="principal">
+			<table class="my-table", id="tabela">
+			<thead>
+			
+				<tr>
+					<th><input type="text" placeholder="Curso" id="txtColuna1"/></th>
+					<th><input type="text" placeholder="Aula"id="txtColuna2"/></th>
+					<th><input type="text" placeholder="Id do curso"id="txtColuna3"/></th>
+				</tr>             
+			</thead>
+			<tbody id="listaDeCursos"></tbody>
+			</table> 
+		</div>
+		
+		<div id="curso" hidden>
+			<table class="my-table", id="tabela">
+			<thead>
+				<tr>
+				<th>Nome do Curso</th>
+				<th>Nome das Aulas</th>
+				<th>Id do curso</th>
+		
+				
+				</tr>
+		</thead>
+			<tbody id="cursoData"></tbody>
+		</table>
+		</div> 
+	</div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/Filter.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>  
+</html>
