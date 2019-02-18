@@ -1,49 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+<head>
 	<meta charset="UTF-8"/>
-	<head>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<title>Lista de Cursos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edige">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Lista de Cursos</title>
 	</head>
-	<body class="index">
-		<div class="centro">
-		<h1>Arena Cursos</h1>
-		<form>
-			<div class="limpar">
-				<input type="button" value= "Limpar" onClick="history.go(0)">
-			</div>
-		</form>   
-		<div class="container" id="principal">
-			<table class="my-table", id="tabela">
-			<thead>
-			
-				<tr>
-					<th><input type="text" placeholder="Curso" id="txtColuna1"/></th>
-					<th><input type="text" placeholder="Aula"id="txtColuna2"/></th>
-					<th><input type="text" placeholder="Id do curso"id="txtColuna3"/></th>
-				</tr>             
-			</thead>
-			<tbody id="listaDeCursos"></tbody>
-			</table> 
-		</div>
-		
-		<div id="curso" hidden>
-			<table class="my-table", id="tabela">
-			<thead>
-				<tr>
-				<th>Nome do Curso</th>
-				<th>Nome das Aulas</th>
-				<th>Id do curso</th>
-		
-				
-				</tr>
-		</thead>
-			<tbody id="cursoData"></tbody>
-		</table>
-		</div> 
-	</div>
-	</body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/Filter.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>  
+<body>
+    
+    <section id="main">
+        <header class="mainHeader">
+            <div class="titulo">
+                <h1><a href="index.html">Listagem de Cursos</a></h1>
+            </div>
+        </header>
+        <nav class="mainNav"> </nav>
+        <article class="mainContent">
+            <div class="container" id="principal">
+                <table class="my-table", id="tabela">
+                    <thead>
+                        <tr>
+                            <th><input class="Pesquisar"type="text" placeholder="Pesquisar Cursos"id="txtColuna2"/></th>
+                        </tr>             
+                    </thead>
+                    <tbody id="listaDeCursos"></tbody>
+                </table> 
+            </div>
+            <div id="curso" hidden>
+                <table class="my-table", id="tabela">
+                    <thead>
+                        <tr>
+                            <th>Nome do Curso</th>
+                            <th>Nome das Aulas</th>
+                            <th>Id do curso</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cursoData"></tbody>
+                </table>
+            </div> 
+            </div>
+        </article>
+    <footer class="mainFooter">Powered by Vitor Sales</footer>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/Filter.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
 </html>

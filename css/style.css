@@ -1,77 +1,104 @@
-.index{  
-	background-image: url(https://raw.githubusercontent.com/Tvitor/DesafioCursos/master/img/teste.jpg);
-	background-color: hsl(0, 0%, 100%);
-	color: rgb(7, 6, 6);
-	font-family: Arial, Helvetica, sans-serif;
-	font-size:16px;
-	font-weight:normal;
-	line-height:1.6em;
-	margin:0;
-	text-align: center; 
-	max-width:100%;
-	height:auto;
 
-	
-	
+
+
+* {
+   margin: 0;
+   padding:0;
 }
 
-.tablecurso{
-	color: white;
+body {
+  background-image: url(/img/teste.jpg);
+  background-size: 100% 100%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.445);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  line-height:1.6em;
+}
+
+#main {
+  
+   display: grid;
+   grid-template-rows: 60vh auto auto auto;
+   grid-template-areas: "header" "nav" "content" "footer";
+}
+
+.mainHeader {
+  background-color:  black;
+   position relative;
+   grid-area: header;
+   
+}
+
+.titulo {
+  position: relative;
+  top: 50%;
+  word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+  font-family:  "futura-pt-1","futura-pt-2", Verdana, sans-serif;
+  
+}
+
+a {
+  border: 5px solid rgb(255, 252, 252);
+  font-size: 10vh;
+  color: rgb(255, 255, 255);
+  text-decoration:none; 
+}
+
+
+.mainNav {
+   
+   grid-area:nav;
+   background: rgb(255, 255, 255);
+}
+
+.mainContent {
+  
+   grid-area: content;
+   
+   
 }
 
 .my-table{
-	background-color: hsl(0, 0%, 100%);
-	width: 50%;
-	height: 5px;
-	margin-bottom : .5em;
-	table-layout: fixed;
-	text-align: center;
-	margin-right:auto; margin-left:auto;
+  background-color: hsl(0, 0%, 100%);
+  width: 70%;
+  margin-bottom : .5em;
+  text-align: center;
+  margin-right:auto; margin-left:auto;
 }
 
-.img{
-	
-	border: 1px solid black;
-	
-
+.banner {
+  margin: 0 auto;
+  height: 400px;
+  width: 50%;
+  overflow: hidden;
+  
 }
 
-h1 {
-	text-align: center;
-	font-family: Georgia, serif;
-font-size: 50px;
-letter-spacing: 0px;
-word-spacing: 2.2px;
-color: #F1F1F1;
-font-weight: 400;
-text-decoration: none;
-font-style: normal;
-font-variant: normal;
-text-transform: none;
-
+.mainFooter {
+   grid-area:footer;
+   background: rgb(180, 178, 178);
 }
 
-input {
-	text-align: center;
-	background-color: white;
+@media screen and ( max-width: 768p) {
+   body {background: ;}
+  #main { grid-template-areas: "header" "content" "footer";}
+  .mainNav { grid-area: header;}
 }
 
-.limpar {
-	color: #02000049;
-	position:absolute;
-	top:15.4% ;
-	left:68.5%;
-	
+@media screen and (max-width: 768px) {
+  h1{
+      font-size: 14vh;
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 600px) {
+  h1{
+      font-size: 5vh;
+  }
+}
