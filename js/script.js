@@ -1,4 +1,4 @@
- $(document).ready( 
+$(document).ready( 
     listarCursos = () => {
         $.ajax({
             'datatype': "json",
@@ -11,17 +11,16 @@
     }
 )
      
-$(document).ready(    criarTabela = (data) => {
+$(document).ready(criarTabela = (data) => {
     let html = "";
     data.forEach(item => {
         html += '<tr>'
-        html += '<div class=tablecurso>' + '<td background = "'+ item.banner +'">' +  item.title +   '</div>' + '</td>'
-        html += '<td>' + '</td>'
-        html += '<td>' + item.subtitle+ '</td>'
-        html +=
-        '<td style="cursor:pointer;" onClick=getCurso('+item.id+')>' +
-        '<b>' + item.id   +'</b></td>'
-        html += '</tr>'
+        html += '<td>' + '<img class="banner" src="'+item.banner +'">'+
+        '<div class="titulos">' + item.title  +  '</div>'  + item.subtitle +
+        '<div style="cursor:pointer;" onClick=getCurso('+item.id+')>' +
+        '<b>' + item.id   +'</b></div>' + '</td>' + '</tr>'
+        
+        
     })
     
     $("#listaDeCursos").append(html)
@@ -52,9 +51,4 @@ showSelectedCurso = (data) => {
         htmlCurso += '</tr>'
         
         $("#cursoData").append(htmlCurso);
-        
 }
-
-
-    
-  
